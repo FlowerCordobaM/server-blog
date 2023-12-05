@@ -1,0 +1,33 @@
+@baseUrl = http://localhost:5000
+@urlPath = api/v1
+
+###
+POST {{baseUrl}}/{{urlPath}}/auth/signup
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{
+  "name": "flower",
+  "password": "dym123",
+  "email": "flower23@test.com"
+}
+
+###
+POST {{baseUrl}}/{{urlPath}}/auth/signin
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{
+  "password": "dym123",
+  "email": "flower1@test.com"
+}
+
+###
+GET {{baseUrl}}/{{urlPath}}/auth/signout
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+

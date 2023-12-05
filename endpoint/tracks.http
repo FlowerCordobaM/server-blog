@@ -1,0 +1,74 @@
+@baseUrl = http://localhost:5000
+@urlPath = api/v1
+
+###
+POST {{baseUrl}}/{{urlPath}}/tracks/create
+Content-Type: application/json
+Accept: application/json
+withCredentials: true,
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTZiZjJhZGU1OTA1YmU1OGJhOWQ0MmQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzAxNjA1MTAwLCJleHAiOjE3MDE2NDgzMDB9.3KGyOt8ISEmDmTURh1w_lR_MjF615d_fh-b2N4Q2qXo 
+
+{
+  "name": "caminanod data",
+  "album": "canta data",
+  "cover":"http://ttt.com",
+  "artist":{
+    "name":"flower",
+    "nickname":"cordoba",
+    "nationality":"colombia"
+  },
+  "duration":{
+    "start":1,
+    "end":0
+  },
+  "mediaId":"5f9987c5a3e2980011e6051a"
+}
+
+
+###
+PUT {{baseUrl}}/{{urlPath}}/tracks/656ba6b3bba1e02164feba4f
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{
+  "name": "caminando UPDATE",
+  "album": "manda",
+  "cover":"http://ttt.com",
+  "artist":{
+    "name":"flower",
+    "nickname":"cordoba",
+    "nationality":"colombia"
+  },
+  "duration":{
+    "start":1,
+    "end":0
+  },
+  "mediaId":"5f9987c5a3e2980011e6051a"
+}
+###
+
+GET {{baseUrl}}/{{urlPath}}/tracks/all
+Content-Type: application/json
+Accept: application/json
+withCredentials: true,
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTZiZjJhZGU1OTA1YmU1OGJhOWQ0MmQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzAxNjA1MTAwLCJleHAiOjE3MDE2NDgzMDB9.3KGyOt8ISEmDmTURh1w_lR_MjF615d_fh-b2N4Q2qXo 
+
+
+###
+GET {{baseUrl}}/{{urlPath}}/tracks/656c6f3380f943c68cfba709
+Content-Type: application/json
+Accept: application/json
+withCredentials: true,
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTZiZjJhZGU1OTA1YmU1OGJhOWQ0MmQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzAxNjA1MTAwLCJleHAiOjE3MDE2NDgzMDB9.3KGyOt8ISEmDmTURh1w_lR_MjF615d_fh-b2N4Q2qXo
+
+
+
+
+###
+DELETE {{baseUrl}}/{{urlPath}}/tracks/656bb8c004dca49a5ea6d2d5
+Content-Type: application/json
+Accept: application/json
+withCredentials: true,
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTZiZjJhZGU1OTA1YmU1OGJhOWQ0MmQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzAxNjA1MTAwLCJleHAiOjE3MDE2NDgzMDB9.3KGyOt8ISEmDmTURh1w_lR_MjF615d_fh-b2N4Q2qXo 
+

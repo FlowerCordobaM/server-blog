@@ -1,0 +1,48 @@
+@baseUrl = http://localhost:5000
+@urlPath = api/v1
+
+###
+POST {{baseUrl}}/{{urlPath}}/categorie/create
+Content-Type: application/json
+Accept: application/json
+withCredentials: true,
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTZiZjJhZGU1OTA1YmU1OGJhOWQ0MmQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzAxNjA1MTAwLCJleHAiOjE3MDE2NDgzMDB9.3KGyOt8ISEmDmTURh1w_lR_MjF615d_fh-b2N4Q2qXo 
+
+{
+  "name": "nodejs",
+  "tag":"656c9abfeec42b04498be662" 
+}
+
+###
+
+GET {{baseUrl}}/{{urlPath}}/blog/all
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+###
+GET {{baseUrl}}/{{urlPath}}/currentuser
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+###
+POST {{baseUrl}}/{{urlPath}}/forgot-password
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{
+  "email": "flower@test.com"
+}
+
+###
+POST {{baseUrl}}/{{urlPath}}/reset-password/d6b4bdcaca3f93fb5a322ccba5cd3768f76ca5ea
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{
+  "password": "qwerty1",
+  "confirmPassword": "qwerty1"
+}

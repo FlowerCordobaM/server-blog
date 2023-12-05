@@ -1,0 +1,27 @@
+@baseUrl = http://localhost:5000
+@urlPath = api/v1
+
+###
+GET {{baseUrl}}/{{urlPath}}/user/all
+Content-Type: application/json
+Accept: application/json
+withCredentials: true,
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NTZlMDJjOGExYjdmNTQ3YTExY2E0NDIiLCJpYXQiOjE3MDE3MDg3MTEsImV4cCI6MTcwMTc1MTkxMX0.NLH2aRk5OKvkO1kWkMMwmvyffTIkAwtqSPvYJt2RHrE
+
+
+###
+PUT {{baseUrl}}/{{urlPath}}/user/656e02c8a1b7f547a11ca442
+Content-Type: application/json
+Accept: application/json
+withCredentials: true,
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NTZlMDJjOGExYjdmNTQ3YTExY2E0NDIiLCJpYXQiOjE3MDE3MDg3MTEsImV4cCI6MTcwMTc1MTkxMX0.NLH2aRk5OKvkO1kWkMMwmvyffTIkAwtqSPvYJt2RHrE
+
+
+###
+GET {{baseUrl}}/{{urlPath}}/user/concurrent
+Content-Type: application/json
+Accept: application/json
+withCredentials: true,
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTZkOTI4NTQyNGQyMDA3ZDUzMmRmNDgiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzAxNjc5NzcxLCJleHAiOjE3MDE3MjI5NzF9.mXdZo7ZywS2cEazW7AbolDSvJgl3DmJyUPlo_PelIV4
+
+

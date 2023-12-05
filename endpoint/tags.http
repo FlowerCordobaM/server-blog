@@ -1,0 +1,45 @@
+@baseUrl = http://localhost:5000
+@urlPath = api/v1
+
+###
+POST {{baseUrl}}/{{urlPath}}/tags/create
+Content-Type: application/json
+Accept: application/json
+withCredentials: true,
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTZiZjJhZGU1OTA1YmU1OGJhOWQ0MmQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzAxNjA1MTAwLCJleHAiOjE3MDE2NDgzMDB9.3KGyOt8ISEmDmTURh1w_lR_MjF615d_fh-b2N4Q2qXo 
+
+{
+  "name": "django"
+ 
+}
+
+###
+GET {{baseUrl}}/{{urlPath}}/tags/all
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+###
+GET {{baseUrl}}/{{urlPath}}/tags/1
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+
+###
+PUT {{baseUrl}}/{{urlPath}}/tags/1
+Content-Type: application/json
+Accept: application/json
+withCredentials: true,
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTZiZjJhZGU1OTA1YmU1OGJhOWQ0MmQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzAxNjA1MTAwLCJleHAiOjE3MDE2NDgzMDB9.3KGyOt8ISEmDmTURh1w_lR_MjF615d_fh-b2N4Q2qXo 
+{
+  "email": "flower@test.com"
+}
+
+###
+DELETE {{baseUrl}}/{{urlPath}}/tags/1
+Content-Type: application/json
+Accept: application/json
+withCredentials: true,
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTZiZjJhZGU1OTA1YmU1OGJhOWQ0MmQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzAxNjA1MTAwLCJleHAiOjE3MDE2NDgzMDB9.3KGyOt8ISEmDmTURh1w_lR_MjF615d_fh-b2N4Q2qXo 
+

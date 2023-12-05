@@ -1,0 +1,29 @@
+@baseUrl = http://localhost:5000
+@urlPath = api/v1
+
+###
+POST {{baseUrl}}/{{urlPath}}/blog/create
+Content-Type: application/json
+Accept: application/json
+withCredentials: true,
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTZkOTI4NTQyNGQyMDA3ZDUzMmRmNDgiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzAxNjc5NzcxLCJleHAiOjE3MDE3MjI5NzF9.mXdZo7ZywS2cEazW7AbolDSvJgl3DmJyUPlo_PelIV4
+
+{
+  "title": "nest con mongo",
+  "desc_short": "canda con sabrosura",
+  "desc_long":"masmamaa desc_long",
+  "category":"656c9e521c1e08345803bfe9",
+  "tags":"656c9abfeec42b04498be662"
+}
+
+###
+GET {{baseUrl}}/{{urlPath}}/blog/all
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+###
+GET {{baseUrl}}/{{urlPath}}/blog/656cc3d7779d3c16967bc8cd
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
